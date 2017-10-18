@@ -2,22 +2,55 @@ package shapes;
 
 import java.util.Random;
 
+/**
+ *@author Katherin Solis Created 10/17/2017 Lab 2.1 shapes
+ *
+ */
+
 public class ShapeUtilities {
-	public static Shape getRandomShape()
-	{
-		Random r = newRandom();
-		int x = r.nextInt(3);
-		s.witch(x);
-		{
-			case 0:
-				return new Circle(r.nextInt(100)+1):
-			case 1:
-				return new Rectangle(r.nextInt(100)+1)+(r.nextInt(100)+1):
-			case 2:
-				return new Square(r.nextInt(100)+1):
-			default:
-				return new Square(r.nextInt(100)+1):
+
+	/**
+	 * Creates a random shape from the choices.
+	 * 
+	 * @return Shape Student Work: Update with your own shape.
+	 */
+	public static Shape randomShape() {
+		Random rand = new Random();
+		int x = rand.nextInt(3);
+
+		switch (x) {
+		case 0:
+			return new Circle(rand.nextInt(100));
+		case 1:
+			return new Rectangle(rand.nextInt(50), rand.nextInt(50));
+		case 2:
+			return new Square(rand.nextInt(50));
+		default:
+			return new Circle(rand.nextInt(100));
 		}
-		
+
 	}
+
+	/**
+	 * adds up the area of all the shapes in the array
+	 * 
+	 * @param shapes
+	 * @return double
+	 */
+	public static double sumArea(Shape[] shapes) {
+		// To be written by student
+		return 0.0;
+	}
+
+	/**
+	 * adds up the perimeter of all the shapes in the array
+	 * 
+	 * @param shapes
+	 * @return double
+	 */
+	public static double sumPerimeter(Shape[] shapes) {
+		// To be written by student
+		return 0.0;
+	}
+
 }
