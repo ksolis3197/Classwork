@@ -22,7 +22,7 @@ public class Runner {
 		Shape square1 = new Square(10);
 
 		System.out.println("First test out the hard coded shape arraay.\n\n");
-		Shape[] shapeArr = { circle1, rectangle1, square1 };
+		Shape[] shapeArr = { circle1, rectangle1, square1};
 
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);

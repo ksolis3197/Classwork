@@ -9,6 +9,7 @@ public class Circle implements Shape {
 	// fields
 	private int radius;
 	private static double pi = 3.14;
+	
 
 	/**
 	 * Constructor method
@@ -17,18 +18,21 @@ public class Circle implements Shape {
 	 */
 	public Circle(int radius) {
 		// to be implemented by student
+		this.radius = radius;
+		
 	}
 
 	@Override
 	public double calculateArea() {
 		// to be implemented by student
-		return 0.0;
+		
+		return ((radius*radius)*pi);
 	}
 
 	@Override
 	public double calculatePerimeter() {
 		// to be implemented by student
-		return 0.9;
+		return ((2*radius)*pi);
 	}
 
 	@Override

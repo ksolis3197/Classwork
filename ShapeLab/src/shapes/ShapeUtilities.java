@@ -25,6 +25,13 @@ public class ShapeUtilities {
 			return new Rectangle(rand.nextInt(50), rand.nextInt(50));
 		case 2:
 			return new Square(rand.nextInt(50));
+	/*	case 3:
+			return new Triangle(rand.nextInt(50));
+		case 4:
+			return new Rhombus(rand.nextInt(50));
+			// Rhombus is the area of two triangles together so do triangle
+			
+	*/
 		default:
 			return new Circle(rand.nextInt(100));
 		}
@@ -50,6 +57,7 @@ public class ShapeUtilities {
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
 		// To be written by student
+		
 		return 0.0;
 	}
 
