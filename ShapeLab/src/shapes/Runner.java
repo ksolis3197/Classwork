@@ -20,19 +20,30 @@ public class Runner {
 		Shape rectangle1 = new Rectangle(10, 4);
 		//length and width
 		Shape square1 = new Square(10);
+		//Shape triangle1 = new Triangle(6,4);
+		//Shape rhombus1 = new Rhombus(20,8);
 
-		System.out.println("First test out the hard coded shape arraay.\n\n");
+		
+		
+		System.out.println("First test out the hard coded shape arraay.");
+		
+
 		Shape[] shapeArr = { circle1, rectangle1, square1};
 
-		for (Shape shape : shapeArr) {
+		for (Shape shape : shapeArr)
+		{
 			System.out.println(shape);
 		}
-		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
+		System.out.println("Did the three shapes above add up to the total printed here?");
+		System.out.println(" ");
 		System.out.println("Total Area: " + ShapeUtilities.sumArea(shapeArr)); // 168.26
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr)); // 86.84
-		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
+		System.out.println(" ");
+		//System.out.println("Did the three shapes above add up to the total printed here?");
+		
+		
 
-		System.out.println("\n\n Now testing the random array.\n");
+		System.out.println("Now testing the random array.");
 
 		shapeArr = new Shape[10];
 
@@ -44,8 +55,8 @@ public class Runner {
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);
 		}
-
-		System.out.println("\nTotal Area: " + ShapeUtilities.sumArea(shapeArr));
+		System.out.println(" ");
+		System.out.println("Total Area: " + ShapeUtilities.sumArea(shapeArr));
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr));
 
 	}

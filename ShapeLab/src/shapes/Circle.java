@@ -38,6 +38,6 @@ public class Circle implements Shape {
 	@Override
 	public String toString() {
 		// to be implemented by student
-		return "";
+		return "Circle Radius length:" + radius + "\t Perimeter:"+ this.calculatePerimeter() + "\t Area:" + this.calculateArea();
 	}
 }
