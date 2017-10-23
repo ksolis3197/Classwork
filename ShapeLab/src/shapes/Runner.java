@@ -20,25 +20,26 @@ public class Runner {
 		Shape rectangle1 = new Rectangle(10, 4);
 		//length and width
 		Shape square1 = new Square(10);
-		//Shape triangle1 = new Triangle(6,4);
-		//Shape rhombus1 = new Rhombus(20,8);
+		Shape triangle1 = new Triangle(6,4);
+		Shape rhombus1 = new Rhombus(10,12,6);
 
 		
 		
-		System.out.println("First test out the hard coded shape arraay.");
+		//System.out.println("First test out the hard coded shape arraay.");
 		
 
-		Shape[] shapeArr = { circle1, rectangle1, square1};
+		Shape[] shapeArr = { circle1, rectangle1, square1, triangle1, rhombus1};
 
 		for (Shape shape : shapeArr)
 		{
 			System.out.println(shape);
 		}
-		System.out.println("Did the three shapes above add up to the total printed here?");
+		//System.out.println("Did the shapes above add up to the total printed here?");
 		System.out.println(" ");
 		System.out.println("Total Area: " + ShapeUtilities.sumArea(shapeArr)); // 168.26
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr)); // 86.84
 		System.out.println(" ");
+
 		//System.out.println("Did the three shapes above add up to the total printed here?");
 		
 		
@@ -52,7 +53,8 @@ public class Runner {
 			shapeArr[i] = ShapeUtilities.randomShape();
 		}
 
-		for (Shape shape : shapeArr) {
+		for (Shape shape : shapeArr) 
+		{
 			System.out.println(shape);
 		}
 		System.out.println(" ");

@@ -24,14 +24,14 @@ public class Triangle implements Shape
 
 	public double calculatePerimeter() {
 		// To be written by student
-		double hyp = Math.sqrt((base/2)+(height));
-		return base +(2* hyp) ;
+		double hyp = Math.sqrt((base*base)+(height*height));
+		return hyp + height + base ;
 		//return 0.0;
 	}
 
 
 	public String toString() {
-		return "Area: " + this.calculateArea() + " Perimeter: "
+		return "Triangle Area: " + this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
 	}
 }

@@ -6,8 +6,9 @@ package shapes;
  */
 public class Rhombus implements Shape{
 	// fields
-	private int length;
-	private int height;
+	private int d1;
+	private int d2;
+	private int side;
 	
 
 	/**
@@ -15,28 +16,29 @@ public class Rhombus implements Shape{
 	 * 
 	 * @param 
 	 */
-	public Rhombus(int length, int height) {
-		this.length = length;
-		this.height = height;
+	public Rhombus(int d1, int d2, int side) {
+		this.d1 = d1;
+		this.d2 = d2;
+		this.side = side;
 		
 	}
 
 	@Override
 	public double calculateArea() {
 		// to be implemented by student
-		return (height)*(length);
+		return ((d2*d1)/2);
 	}
 
 	@Override
 	public double calculatePerimeter() {
 		// to be implemented by student
-		return (2*height)+(2*length);
+		return (side)+(side)+side+side;
 	}
 
 	@Override
 	public String toString() {
 		// to be implemented by student
-		return "Rhombus length:" + length +"\t Height"+ height+ "\t Perimeter:"+ this.calculatePerimeter() + "\t Area:"
+		return "Rhombus Diagonal 1:" + d1 +"\t Diagonal 2:"+ d2+ "\t Perimeter:"+ this.calculatePerimeter() + "\t Area:"
 					+this.calculateArea();
 	}
 
