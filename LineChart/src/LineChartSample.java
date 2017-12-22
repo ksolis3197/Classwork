@@ -1,4 +1,4 @@
-package application;
+
 import javafx.application.Application;
 
 //http://lauraliparulo.altervista.org/data-science-java-part-2-csv-data-charts/
